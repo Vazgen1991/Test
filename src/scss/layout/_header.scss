@@ -1,0 +1,95 @@
+.header {
+  padding: 21px 0;
+
+  .nav {
+    .nav__items {
+      .nav__item {
+        margin-right: 53px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .nav__item-link {
+          font-size: $font-alternative;
+          line-height: $line-alternative;
+
+          &:hover {
+            opacity: .7;
+          }
+        }
+      }
+    }
+
+    @include for-phone-sm-only {
+      display: none;
+
+    }
+  }
+
+  .nav__mobile {
+    display: none;
+    position: absolute;
+    left: -100%;
+    @include transition(all .3s);
+
+    &.active {
+      position: relative;
+      left: 2%;
+
+    }
+
+    @include for-phone-sm-only {
+      display: block;
+
+    }
+
+    .nav__mobile-items {
+      padding: 0 10px;
+
+      .nav__mobile-item {
+        padding: 7px 0;
+
+        .nav__mobile-link {
+          position: relative;
+
+          &:before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            top: 25px;
+            background: $primary-color;
+            @include transition(all .3s);
+          }
+
+          &:hover {
+            &:before {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+    justify-content: flex-end;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .7;
+    }
+
+    @include for-phone-sm-only {
+      display: flex;
+
+    }
+
+  }
+
+  @include for-phone-sm-only {
+    padding: 8px 0;
+
+  }
+}

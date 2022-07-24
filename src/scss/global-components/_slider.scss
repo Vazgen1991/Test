@@ -1,0 +1,84 @@
+.swiper {
+  .swiper-wrapper {
+    .swiper-slide {
+      .swiper-imb-block {
+        background-color: $bg-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 287px;
+        img {
+          display: block;
+          object-fit: cover;
+
+          &.fixed-img {
+            height: 267px;
+          }
+
+          @include for-phone-only {
+            height: 100%;
+            object-fit: unset;
+          }
+        }
+
+      }
+      .slider-btn {
+        margin-top: 32px;
+        font-size: $font-primary;
+        line-height: $line-primary;
+        font-weight: 600;
+        @include for-tablet-landscape-up {
+          max-width: 100%;
+        }
+      }
+      .swiper-text {
+        margin-bottom: 19px;
+        font-size: $font-secondary;
+        line-height: $line-secondary;
+        font-weight: 700;
+      }
+      @include for-desktop-up {
+        padding: 10px;
+      }
+      @include for-phone-only {
+        text-align: center;
+      }
+
+    }
+  }
+}
+
+.sw-slider {
+  position: relative;
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #ffffff;
+    transition: .3s all ease-in-out;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      background-color: darken(#ffffff, 5%)
+    }
+
+  }
+  .swiper-button-next {
+    right: -21px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.09) !important;
+    @include for-desktop-up {
+      right: 11px;
+    }
+  }
+  .swiper-button-prev {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    left: -21px;
+    @include for-desktop-up {
+      left: 11px;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+// transition //
+
+@mixin transition($args...) {
+  transition: $args;
+
+}
+
+// transition //
+
+//positions//
+
+@mixin pos-abs($top: null, $right: null, $bottom: null, $left: null) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+}
+
+@mixin pos-rel($top: null, $right: null, $bottom: null, $left: null) {
+  position: relative;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+
+}
+
+//positions//
+
+//flexBox
+
+@mixin flex($flex) {
+
+  display: $flex;
+
+}
+@mixin flex-wrap($wrap) {
+
+  flex-wrap: $wrap;
+
+}
+
+@mixin justify-content($justify) {
+  justify-content: $justify;
+
+
+}
+
+@mixin justify-center($justify_center) {
+  justify-content: $justify_center;
+
+
+}
+@mixin justify-around($justify_around) {
+  justify-content: $justify_around;
+
+
+}
+
+
+@mixin align-items($align) {
+  align-items: $align;
+
+}
+
+@mixin flex-direction($direction) {
+  flex-direction: $direction;
+
+}
+
+// flexBox //
+
+// media
+
+@mixin for-phone-sm-only {
+  @media (max-width: 480px) { @content; }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 576px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (max-width: 768px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (max-width: 992px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (max-width: 1200px) { @content; }
+}
+//@mixin for-medium-desktop-up {
+//  @media (max-width: 1440px) { @content; }
+//}
+@mixin for-big-desktop-up {
+  @media (max-width: 1800px) { @content; }
+}
+
+
+

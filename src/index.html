@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html', {
+"title": "Test"
+})
+<body>
+@@include('html/header.html', {})
+
+<main>
+    <section>
+        <div class="container">
+            <div class="banner">
+                <div class="container-sm">
+                    <div class="banner__block">
+                        <h1 class="heading h1">Квартиры в Краснодаре от надежного застройщика</h1>
+                        <button class="btn button-lg banner__btn">Подобрать квартиру</button>
+                    </div>
+                </div>
+                <div class="banner-footer">
+                    <div class="banner-footer__block flex container-sm">
+                        <div class=" flex align-center">
+                            <svg width="35" height="33" class="m-r-20">
+                                <use class="left__arrow" xlink:href="img/icons/icons.svg#traced"></use>
+                            </svg>
+                            <span class="banner-footer__text">Ипотека от 4,7% - успейте оформить только до 6.04.2022 г. </span>
+
+                        </div>
+                        <button class="btn button-sm banner-footer__btn">Подробнее</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="category">
+        <div class="container-sm">
+            <h2 class="heading h2 center m-b-55">Варианты планировок</h2>
+            <div class="sw-slider">
+                <div class="swiper mySwiper ">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <p class="swiper-text">1-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img src="img/home-1.png" alt="img">
+                            </div>
+
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="swiper-text">2-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img src="img/home-2.png" alt="img">
+                            </div>
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="swiper-text">3-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img src="img/home-3.png" alt="img">
+                            </div>
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="swiper-text">1-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img class="fixed-img" src="img/home-4.png" alt="img">
+                            </div>
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="swiper-text">1-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img src="img/home-5.png" alt="img">
+                            </div>
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+                        <div class="swiper-slide">
+                            <p class="swiper-text">3-комнатная квартира</p>
+                            <div class="swiper-imb-block">
+                                <img src="img/home-3.png" alt="img">
+                            </div>
+                            <button class="btn button-md slider-btn">Узнать стоимость</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-button-next">
+                    <svg width="8" height="13">
+                        <use xlink:href="img/icons/icons.svg#right-arrow"></use>
+                    </svg>
+                </div>
+                <div class="swiper-button-prev">
+                    <svg width="8" height="13">
+                        <use xlink:href="img/icons/icons.svg#left-arrow"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+</main>
+
+@@include('html/footer.html', {})
+
+
+
+
+<script src="js/app.min.js"></script>
+
+</body>
+</html>

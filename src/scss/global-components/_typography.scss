@@ -1,0 +1,43 @@
+.heading {
+  font-weight: 700;
+
+  &.h1 {
+    font-size: $font-xlg;
+    line-height: $line-xlg;
+    color: #ffffff;
+    @include for-tablet-landscape-up {
+      font-size: 36px;
+
+    }
+    @include for-tablet-portrait-up {
+      font-size: 23px;
+      line-height: 40px;
+
+    }
+    @include for-phone-sm-only {
+      font-size: 21px;
+
+    }
+
+
+  }
+  &.h2 {
+    font-size: $font-lg;
+    line-height: $line-lg;
+    color: $primary-color;
+
+    @include for-tablet-portrait-up {
+      font-size: 28px;
+    }
+    @include for-phone-only {
+      margin-bottom: 40px;
+      font-size: 24px;
+    }
+    @include for-phone-sm-only {
+      font-size: 21px;
+    }
+  }
+  &.center {
+    text-align: center;
+  }
+}

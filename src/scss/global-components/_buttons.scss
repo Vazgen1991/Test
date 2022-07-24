@@ -1,0 +1,51 @@
+
+.btn {
+  font-family: Gilroy-Regular, sans-serif;
+  font-weight: 600;
+  width: 100%;
+  background-color: $secondary-color;
+  color: #ffffff;
+
+  &:hover {
+    cursor: pointer;
+    @include transition(all .3s);
+    background-color: lighten($secondary-color, 5%);
+  }
+
+  &.button-lg {
+
+    max-width: 354px;
+    height: 64px;
+    line-height: 64px;
+    font-size: $font-primary;
+    @include for-tablet-portrait-up {
+      font-size: 16px;
+    }
+    @include for-phone-sm-only {
+      height: 52px;
+      line-height: 52px;
+    }
+  }
+
+  &.button-md {
+    max-width: 351px;
+    height: 70px;
+    line-height: 70px;
+    @include for-phone-sm-only {
+      height: 52px;
+      line-height: 52px;
+    }
+  }
+
+  &.button-sm {
+    max-width: 205px;
+    height: 37px;
+
+  }
+}
+
+
+
+
+
+
